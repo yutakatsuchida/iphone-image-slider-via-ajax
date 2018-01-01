@@ -1,0 +1,161 @@
+
+@import "compass";
+@import "compass/reset";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+body {
+	font-family: 'Open Sans';
+  	font-style: normal;
+  	font-weight: 400;
+  	padding: 1em 0;
+    background: #000;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	padding-bottom:.5em;
+}
+
+dl {
+    text-align: center;
+    margin-bottom: .5em;
+
+    a {
+        display: block;
+        background: #00b7ee;
+        width: 100px;
+        line-height: 30px;
+        height: 30px;
+        text-decoration: none;
+        color:#fff;
+        border: solid 1px #20538D;
+        @include text-shadow(rgba(0, 0, 0, 0.2) 0 -1px 0);
+        @include box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2));
+        @include border-radius(3px);
+        &:hover,&.active {
+            background: #356094;
+            border: solid 1px #2A4E77;
+            @include box-shadow(inset 0 1px 4px rgba(0, 0, 0, 0.6));
+            color:#aaa;
+        }
+    }
+
+    dt {
+        @include inline-block;
+    }
+    dd {
+        @include inline-block;
+    }
+}
+
+#slider {
+	margin: 0 auto;
+    position:relative;
+    width: 399px;
+    height: 827px;
+    .screen {
+        margin: 0 auto;
+        overflow: hidden;
+        position:relative;
+        .scpic {
+            position: absolute;
+            z-index: 9999;
+            left: 0;
+        }
+    }
+    ul {
+        @include clearfix;
+        li {
+            float: left;
+        }
+    }
+    &.portrait {
+        width: 399px;
+        height: 827px;
+        .wrapper {
+            background: url(http://xinkyo.firebird.jp/codepen/iphone_pic.png) left top no-repeat;
+            width: 399px;
+            height: 827px;
+        }
+        .screen {
+            padding-top: 107px;
+            width: 340px;
+            height: 612px;
+            .scpic {
+                top:107px;
+            }
+        }
+        ul {
+            li {
+                width: 340px;
+                height: 612px;
+            }
+        }
+    }
+
+    &.landscape {
+        width: 827px;
+        height: 399px;
+        .wrapper {
+            background: url(http://xinkyo.firebird.jp/codepen/iphone_landscape.png) left top no-repeat;
+            width: 827px;
+            height: 399px;
+        }
+        .screen {
+            padding-top: 29px;
+            width: 612px;
+            height: 340px;
+            .scpic {
+                top:29px;
+            }
+        }
+        ul {
+            li {
+                width: 612px;
+                height: 340px;
+            }
+        }
+    }
+    
+
+    #loading {
+        position: absolute;
+        top: 50px;
+        left:50%;
+        margin: -15px 0 0 -15px;
+        z-index: 99999;
+    }
+        
+	
+    
+
+    a {
+        display:block;
+        position:absolute;
+        margin-top: -113px;
+        top:50%;
+        left:-120px;
+        text-decoration:none;
+        @include opacity(0.3);
+        @include transition-property(opacity);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in);
+        &#sliderNext {
+            right:-120px;
+            left: auto;
+        }
+        &:hover {
+            @include opacity(1.0);
+            
+        }
+        }
+
+    
+}

@@ -1,0 +1,259 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+/* line 5, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 6, style.scss */
+body {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  padding: 1em 0;
+  background: #000;
+  color: #fff;
+}
+
+/* line 15, style.scss */
+p {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+/* line 20, style.scss */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: .5em;
+}
+
+/* line 26, style.scss */
+dl {
+  text-align: center;
+  margin-bottom: .5em;
+}
+/* line 30, style.scss */
+dl a {
+  display: block;
+  background: #00b7ee;
+  width: 100px;
+  line-height: 30px;
+  height: 30px;
+  text-decoration: none;
+  color: #fff;
+  border: solid 1px #20538D;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0;
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 42, style.scss */
+dl a:hover, dl a.active {
+  background: #356094;
+  border: solid 1px #2A4E77;
+  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  color: #aaa;
+}
+/* line 50, style.scss */
+dl dt {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 53, style.scss */
+dl dd {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 58, style.scss */
+#slider {
+  margin: 0 auto;
+  position: relative;
+  width: 399px;
+  height: 827px;
+}
+/* line 63, style.scss */
+#slider .screen {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+/* line 67, style.scss */
+#slider .screen .scpic {
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+}
+/* line 73, style.scss */
+#slider ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 75, style.scss */
+#slider ul li {
+  float: left;
+}
+/* line 79, style.scss */
+#slider.portrait {
+  width: 399px;
+  height: 827px;
+}
+/* line 82, style.scss */
+#slider.portrait .wrapper {
+  background: url(http://xinkyo.firebird.jp/codepen/iphone_pic.png) left top no-repeat;
+  width: 399px;
+  height: 827px;
+}
+/* line 87, style.scss */
+#slider.portrait .screen {
+  padding-top: 107px;
+  width: 340px;
+  height: 612px;
+}
+/* line 91, style.scss */
+#slider.portrait .screen .scpic {
+  top: 107px;
+}
+/* line 96, style.scss */
+#slider.portrait ul li {
+  width: 340px;
+  height: 612px;
+}
+/* line 103, style.scss */
+#slider.landscape {
+  width: 827px;
+  height: 399px;
+}
+/* line 106, style.scss */
+#slider.landscape .wrapper {
+  background: url(http://xinkyo.firebird.jp/codepen/iphone_landscape.png) left top no-repeat;
+  width: 827px;
+  height: 399px;
+}
+/* line 111, style.scss */
+#slider.landscape .screen {
+  padding-top: 29px;
+  width: 612px;
+  height: 340px;
+}
+/* line 115, style.scss */
+#slider.landscape .screen .scpic {
+  top: 29px;
+}
+/* line 120, style.scss */
+#slider.landscape ul li {
+  width: 612px;
+  height: 340px;
+}
+/* line 128, style.scss */
+#slider #loading {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin: -15px 0 0 -15px;
+  z-index: 99999;
+}
+/* line 139, style.scss */
+#slider a {
+  display: block;
+  position: absolute;
+  margin-top: -113px;
+  top: 50%;
+  left: -120px;
+  text-decoration: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 150, style.scss */
+#slider a#sliderNext {
+  right: -120px;
+  left: auto;
+}
+/* line 154, style.scss */
+#slider a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}

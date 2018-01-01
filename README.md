@@ -1,1 +1,1 @@
-# iphone-image-slider-via-ajax
+# iPhone Image Slider via Ajax
